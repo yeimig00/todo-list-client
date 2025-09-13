@@ -1,0 +1,28 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mis tareas</title>
+<link rel="stylesheet" href="./css/styles.css"></head><body>
+  <div class="container" style="max-width:1100px;">
+    <div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center">
+      <div><h2>Mis tareas</h2><div class="small">Gestiona tus tareas en columnas</div></div>
+      <div><button id="logoutBtn" class="btn btn-ghost">Cerrar sesión</button></div>
+    </div>
+    <div class="kanban-shell">
+      <div class="column">
+        <div class="col-header">Por hacer</div>
+        <div id="col-todo" class="col-card"></div>
+      </div>
+      <div class="column">
+        <div class="col-header">Haciendo</div>
+        <div id="col-doing" class="col-card"></div>
+      </div>
+      <div class="column">
+        <div class="col-header">Hecho</div>
+        <div id="col-done" class="col-card"></div>
+      </div>
+    </div>
+  </div>
+
+  <button id="fabCreate" class="fab">+</button>
+
+  <!-- Create/Edit modal simple pages implemented as separate html files; here we navigate -->
+<script type="module" src="./js/tasks.js"></script>
+</body></html>

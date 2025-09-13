@@ -1,0 +1,13 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editar tarea</title>
+<link rel="stylesheet" href="./css/styles.css"></head><body>
+  <div class="container"><div class="card"><h2>Editar tarea</h2>
+    <form id="editForm" class="form" novalidate>
+      <input id="title" class="input" type="text" placeholder="Título" required>
+      <textarea id="detail" class="input" placeholder="Detalle"></textarea>
+      <input id="dateTime" class="input" type="datetime-local">
+      <select id="status" class="input"><option value="todo">Por hacer</option><option value="doing">Haciendo</option><option value="done">Hecho</option></select>
+      <div id="editMsg" class="small" aria-live="polite"></div>
+      <div style="display:flex;gap:8px"><button class="btn btn-primary" type="submit">Guardar</button><a href="tasks.html" class="btn btn-ghost" style="text-decoration:none;padding:12px;border-radius:8px;display:inline-block">Cancelar</a></div>
+    </form></div></div>
+<script type="module" src="./js/tasks.js"></script>
+</body></html>
